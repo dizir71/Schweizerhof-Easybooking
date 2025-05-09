@@ -1,0 +1,93 @@
+/* ==== Layout & Logo ==== */
+.header {
+  height: 40px !important;
+  background-color: #ffffffd9 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Logo sichtbar, doppelt so groß & mit starkem weißen Schein, um 150px nach unten und 15px nach rechts versetzt */
+.header .logo img {
+  height: auto !important;
+  max-height: 240px;
+  margin-top: 150px !important;
+  margin-left: 15px !important;
+  filter: drop-shadow(0 0 6px white) brightness(1.2);
+}
+
+/* ==== Navigation ==== */
+.navigation .nav-item a {
+  font-size: 14px !important;
+  font-weight: 500;
+  padding: 10px 12px;
+  color: #222;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover-Effekt nur auf Schrift */
+.navigation .nav-item a:hover {
+  color: #1487fa !important;
+}
+
+/* Aktiver Menüpunkt */
+.navigation .nav-item a.current {
+  color: #1487fa !important;
+  font-weight: bold;
+}
+
+/* ==== Sprachmenü ==== */
+.langSwitch img {
+  display: none !important;
+}
+
+/* ==== Headline ==== */
+.hero h3 {
+  font-size: clamp(2.2rem, 5.2vw, 4.2rem) !important;
+  font-weight: bold;
+  color: white !important;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  line-height: 1.2;
+  white-space: pre-line; /* erzwingt Zeilenumbruch bei \n */
+}
+
+/* Top-Text (zweite Überschrift oberhalb) ausblenden */
+.top-text {
+  display: none !important;
+}
+
+/* ==== Footer Farben und Lesbarkeit ==== */
+.footer {
+  background-color: #1d4ea2 !important;
+  color: white !important;
+}
+
+.footer h5,
+.footer a,
+.footer ul li {
+  color: white !important;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #cce4ff !important;
+}
+
+/* ==== Buchungs-Button ==== */
+.submitButton,
+.nav-item.booking a {
+  background-color: #1487fa !important;
+  border: none;
+  color: white !important;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover,
+.nav-item.booking a:hover {
+  background-color: #a3cfff !important;
+  color: white !important;
+}

@@ -1,0 +1,81 @@
+
+/* -----------------------------------------------------------
+   override.css – Gästehaus Schweizerhof am See (Stand: 2025-05-04)
+-------------------------------------------------------------- */
+
+/* Menüleiste */
+.header {
+  height: 40px !important;
+  background: white !important;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.logo img {
+  filter: drop-shadow(0 0 4px white) brightness(1.3);
+  max-height: 120px;
+  height: auto;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navigation: Hover-Effekt nur Schrift */
+.navigation .nav-item a {
+  color: #3b3b3b;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigation .nav-item a:hover {
+  color: #1487fa;
+}
+
+/* Sprache nur Text (Flaggen deaktiviert) */
+.langSwitch .language img {
+  display: none !important;
+}
+
+/* Headline "Schweizerhof am See" */
+.hero h3 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+}
+
+.hero p.top-text {
+  display: none !important;
+}
+
+/* Buchen-Button – einheitlich */
+.booking .nav-item a,
+.submitButton.buchen {
+  background-color: #3b8ef6 !important;
+  color: white !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+}
+
+.booking .nav-item a:hover,
+.submitButton.buchen:hover {
+  background-color: #2e73cc !important;
+  color: white !important;
+}
+
+/* Footer Farben */
+.footer {
+  background-color: #123a68 !important;
+  color: white !important;
+}
+
+.footer a {
+  color: #ffffff !important;
+}
+
+.footer h5 {
+  color: #ffffff !important;
+}
+
+.footer .container a:hover {
+  color: #aaccff !important;
+}

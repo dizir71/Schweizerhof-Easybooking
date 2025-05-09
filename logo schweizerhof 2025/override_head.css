@@ -1,0 +1,103 @@
+/* === Schriftgrößen & Überschriften harmonisieren === */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 4px #00000070;
+  margin-bottom: 0.3em;
+}
+h2, h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #e0e0e0;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+h2 + h3 {
+  display: none; /* zweite Überschrift ausblenden */
+}
+
+/* === Menüleiste verschlanken & Logo anpassen === */
+.header {
+  height: 40px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.logo img {
+  height: auto;
+  width: auto;
+  max-height: 180px;
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 10px white);
+  margin-top: 140px;
+}
+
+/* === Navigation verfeinern === */
+.navigation .nav-item a {
+  padding: 0.3em 0.6em;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+.navigation .nav-item a:hover {
+  color: #aedbf4; /* dezentes Hellblau */
+  background: none;
+}
+.navigation .nav-item.current a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* === Sprachwahl vereinfachen === */
+.langSwitch img {
+  display: none !important; /* Flaggen ausblenden */
+}
+.langSwitch .dropdown-menu .dropdown-item {
+  font-size: 0.85rem;
+  padding: 2px 8px;
+  color: #ffffff;
+}
+.langSwitch .dropdown-menu .dropdown-item:hover {
+  background-color: #1b2a40;
+  color: #aad7ff;
+}
+
+/* === Buchungsbutton (Header) === */
+.navright .booking a {
+  background: none !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+}
+.navright .booking a:hover {
+  color: #aedbf4 !important;
+}
+
+/* === Footer Farben anpassen === */
+.footer {x
+  background-color: #1b2a40 !important;
+  color: #ffffff;
+}
+.footer h5 {
+  color: #d0eaff;
+}
+.footer a {
+  color: #aad7ff;
+}
+.footer a:hover {
+  color: #ffffff;
+}
+
+/* === Responsives Layout === */
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin-top: 40px;
+    max-height: 90px;
+    transform: scale(1.2);
+  }
+  .navigation .nav-item a {
+    font-size: 0.9rem;
+    padding: 0.4em;
+  }
+}

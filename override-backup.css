@@ -1,0 +1,130 @@
+/* ================= Font-Face Amazone BT ================= */
+@font-face {
+    font-family: 'Amazone BT';
+    src: url('/fileadmin/11417/ci/fonts/AmazoneBT-Regular.woff2') format('woff2'),
+         url('/fileadmin/11417/ci/fonts/AmazoneBT-Regul^[Überprüfe die CSS-Klassen, die das Logo betreffen, und passe die `margin`- oder `padding`-Eigenschaften an, um das Logo weiter nach unten zu verschieben.]({"attribution":{"attributableIndex":"282-3"}})/
+.heade^[Vergrößere das Logo durch Anpassung der `width`- und `height`-Eigenschaften im CSS.]({"attribution":{"attributableIndex":"282-4"}})ow: 0 2px 5px rgba(0,0,0,0.1);
+  display: fle^[Füge in deinem CSS ein Hintergrundbild hinzu, indem du beispielsweise folgende Regel verwendest:]({"attribution":{"attributableIndex":"792-1"}})x-height: 240px;
+  margin-top: 150px !important;
+  margin-left: 15px !important;
+  filter: drop-shadow(0 0 6px white) brightness(1.3);
+}
+
+/* ================= Navigati^[Stelle sicher, dass der Pfad zum Bild korrekt ist und das Bild auf dem Server vorhanden ist.]({"attribution":{"attributableIndex":"792-2"}})0px 12px;
+  color: #222 !important;
+  trans^[Überprüfe deine Template-Dateien und Seiteninhalte auf doppelte Titelangaben.]({"attribution":{"attributableIndex":"1192-1"}})BT', Geo^[Entferne oder kommentiere eine der doppelten Titelzeilen aus, um Redundanzen zu vermeiden.]({"attribution":{"attributableIndex":"1192-2"}})igation .nav-item a:hover,
+.navigation .nav-item a.current {
+  color: #1487fa !important;
+}
+/* Gallerie-Untermenü ausblenden */
+.navigation .nav-item.sub .dropdown {
+  display: none !important;
+}
+
+/* ================= Sprachmenü ================= */
+.langSwitch img {
+  display: none !important;
+}
+
+/* ================= Hero & Typewriter ================= */
+/* Default-Headline ausblenden */
+.hero h3,
+.companyName,
+.top-text {
+  display: none !important;
+}
+
+/* Container für zweizeilige Überschrift */
+#typewriterContainer,
+.typewriter-container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  pointer-events: none;
+}
+/* Stil für jede Textzeile */
+.typewriter-line {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: 'Amazone BT', Georgia, Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5vw, 3rem) !important;
+  color: white !important;
+  text-shadow: 0 0 3px rgba(0,0,0,0.6);
+}
+
+/* ================= Footer ================= */
+.footer {
+  background-color: #1d4ea2 !important;
+  color: white !important;
+}
+.footer h5,
+.footer a,
+.footer ul li {
+  color: white !important;
+  font-size: 14px;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #cce4ff !important;
+}
+
+/* ================= Buchungs-Button ================= */
+.submitButton,
+.nav-item.booking a {
+  background-color: #1487fa !important;
+  border: none;
+  color: white !important;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.submitButton:hover,
+.nav-item.booking a:hover {
+  background-color: #a3cfff !important;
+}
+
+/* ================= Globales Hintergrundbild ================= */
+body {
+  background: url('/fileadmin/userdaten/customerData/11417/ci/background/schweizerhof-pastellogo.png') no-repeat center center fixed;
+  background-size: contain;
+  background-blend-mode: lighten;
+}
+
+/* ================= Subseiten-Anpassungen ================= */
+/* Auf allen Unterseiten (nicht Homepage, isroot-1) Hero, Slider & Typewriter ausblenden */
+body:not(.isroot-1) .hero,
+body:not(.isroot-1) .slider,
+body:not(.isroot-1) .typewriter-container {
+  display: none !important;
+}
+/* Subpages: kein blauer Balken */
+body:not(.isroot-1) .slider { display: none !important; }
+
+/* Halbtransparente Hintergründe für Widgets auf allen Seiten */
+.smallsearch-booking-form,
+.booking-form,
+.ebCategories,
+.ebPricelist,
+.ebAvailability,
+.ebPriceOmeter,
+.ebPackages {
+  background: rgba(255,255,255,0.6) !important;
+}
+
+/* Abstand unter Überschrift auf Unterseiten */
+body:not(.isroot-1) .main-content header h1 {
+  margin-bottom: 40px !important;
+}
+
+/* ================= Alte Überschriften ausblenden ================= */
+.ce-bodytext h1,
+.ce-bodytext h2,
+.ce-bodytext h4 {
+  display: none !important;
+}

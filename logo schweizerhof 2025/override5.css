@@ -1,0 +1,123 @@
+/* ==== Layout & Logo ==== */
+.header {
+  height: 40px !important;
+  background-color: #ffffffd9 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Logo  groß, hell verschoben */
+.header .logo img {
+  width: auto;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  display: block;
+  margin-top: 150px !important;
+  margin-left: 15px !important;
+  filter: brightness(1.15);
+  image-rendering: crisp-edges; /* Wichtig für PNG-Schärfe */
+  object-fit: contain;
+}
+/* ==== Navigation ==== */
+.navigation .nav-item a {
+  font-size: 14px !important;
+  font-weight: 500;
+  padding: 10px 12px;
+  color: #222;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover-Effekt nur Schrift */
+.navigation .nav-item a:hover {
+  color: #1487fa !important;
+}
+
+/* Aktiver Menüpunkt */
+.navigation .nav-item a.current {
+  color: #1487fa !important;
+  font-weight: bold;
+}
+
+/* ==== Sprachmenü (keine Flaggen) ==== */
+.langSwitch img {
+  display: none !important;
+}
+
+/* ==== Headline ==== */
+/* Originaltext verstecken */
+.hero h3 {
+  font-size: 0 !important;
+  visibility: hidden;
+  position: relative;
+}
+
+/* Neuer Text */
+.hero h3::after {
+  content: "Schweizerhof am See";
+  white-space: pre-line;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Alte Top-Headline ausblenden */
+.top-text {
+  display: none !important;
+}
+
+/* ==== Footer Farben und Lesbarkeit ==== */
+.footer {
+  background-color: #1d4ea2 !important;
+  color: white !important;
+}
+
+.footer h5,
+.footer a,
+.footer ul li {
+  color: white !important;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #cce4ff !important;
+}
+
+/* ==== Buchungs-Button ==== */
+.submitButton,
+.nav-item.booking a {
+  background-color: #none !important;
+  border: none;
+  color: white !important;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover,
+.nav-item.booking a:hover {
+  background-color: #a3cfff !important;
+  color: white !important;
+}
+/* ==== Hintergrundbild (dezentes Logo) ==== */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background: url('/fileadmin/userdaten/customerData/11417/ci/schweizerhof-pastellogo.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
