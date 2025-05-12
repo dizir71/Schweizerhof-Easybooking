@@ -1,0 +1,138 @@
+/* ==== Layout & Logo ==== */
+.header {
+  height: 40px !important;
+  background-color: #ffffffd9 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: auto !important;
+  max-height: 240px;
+  margin-top: 150px !important;
+  margin-left: 15px !important;
+  filter: drop-shadow(0 0 6px white) brightness(1.3);
+  image-rendering: auto;
+}
+
+/* ==== Navigation ==== */
+.navigation .nav-item a {
+  font-size: 14px !important;
+  font-weight: 500;
+  padding: 10px 12px;
+  color: #222 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.navigation .nav-item a:hover {
+  color: #1487fa !important;
+}
+
+.navigation .nav-item a.current {
+  color: #1487fa !important;
+  font-weight: bold;
+}
+
+/* ==== Sprachmenü ==== */
+.langSwitch img {
+  display: none !important;
+}
+
+/* ==== Hero Überschrift – Typewriter mit 2 Zeilen ==== */
+.typewriter-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.typewriter-line {
+  display: block;
+  font-family: 'Amazone BT', Georgia, Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.6em;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+/* ==== Titel doppelt entfernen ==== */
+.companyName h4 {
+  display: none !important;
+}
+
+/* ==== Typografie Unterseiten Überschrift ==== */
+.main-content h1 {
+  font-family: Georgia, Times, serif;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin-top: 40px;
+}
+
+/* ==== Unterseiten: Widget-Abstand anpassen ==== */
+.ce-bodytext {
+  margin-top: 40px !important;
+}
+
+/* ==== Galerie ausblenden ==== */
+a[href*="/unterkunft/gallerie/"] {
+  display: none !important;
+}
+
+/* ==== Blaue Balken ausblenden ==== */
+.subIntroText, .frame-ruler-before:before, .frame-ruler-after:after {
+  display: none !important;
+}
+
+/* ==== Widgets halbtransparent ==== */
+.booking-form,
+.ce-gallery,
+.footer,
+.requestCTA,
+.bookingCTA {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* ==== Footer Farben und Lesbarkeit ==== */
+.footer {
+  background-color: #1d4ea2 !important;
+  color: white !important;
+}
+
+.footer h5,
+.footer a,
+.footer ul li {
+  color: white !important;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #cce4ff !important;
+}
+
+/* ==== Buchungs-Button ==== */
+.submitButton,
+.nav-item.booking a {
+  background-color: #1487fa !important;
+  border: none;
+  color: white !important;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover,
+.nav-item.booking a:hover {
+  background-color: #a3cfff !important;
+  color: white !important;
+}
+
+/* ==== Hintergrundbild global ==== */
+body {
+  background: url('/fileadmin/userdaten/customerData/11417/ci/background/schweizerhof-pastellogo.png') no-repeat center center fixed;
+  background-size: contain;
+  background-blend-mode: lighten;
+}
